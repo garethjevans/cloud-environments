@@ -12,7 +12,6 @@ jx create terraform -o ${CLUSTER_NAME,,} \
     --cluster 'dev=gke' \
     --skip-login=true \
     --batch-mode \
-    --labels kind=bdd,git=ghe \
     --gke-project-id ${PROJECT_ID} \
     --gke-zone ${ZONE} \
     --gke-machine-type n1-standard-2 \
