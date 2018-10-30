@@ -9,6 +9,7 @@ git config --global --add user.name JenkinsXBot
 git config --global --add user.email jenkins-x@googlegroups.com
 
 jx create terraform -o ${CLUSTER_NAME,,} \
+    --install-dependencies \
     --cluster 'dev=gke' \
     --skip-login=true \
     --batch-mode \
