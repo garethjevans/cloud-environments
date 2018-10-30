@@ -2,6 +2,7 @@
 set -e
 set -x
 
+gcloud --version
 gcloud auth activate-service-account --key-file $SERVICE_ACCOUNT_FILE
 
 # lets setup git 
