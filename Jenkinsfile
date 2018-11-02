@@ -32,8 +32,8 @@ pipeline {
                 sh "./jx/scripts/ci-gke.sh"
                 sh "jx version -b"
 
-                // lets test we have the jenkins token setup
-                sh "jx get pipeline"
+                // lets test we have the jenkins token setup - commented out as this won't work on prow
+                // sh "jx get pipeline"
                 
                 dir ('/home/jenkins/go/src/github.com/jenkins-x/godog-jx'){
                     git "https://github.com/jenkins-x/godog-jx"
